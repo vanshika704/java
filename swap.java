@@ -1,6 +1,6 @@
 public class swap {
     public static void main(String[] args) {
-        int a = 10;
+        int a = 50;
         int b = 20;
 
         
