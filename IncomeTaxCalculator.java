@@ -13,7 +13,7 @@ public class IncomeTaxCalculator {
             } else {
                 tax = (310000 * 0.1) + (300000 * 0.2) + (income - 800000) * 0.3;
             }
-        } else { // for general category
+        } else { 
             if (income <= 180000) {
                 tax = 0;
             } else if (income <= 500000) {
