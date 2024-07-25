@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class IncomeTaxCalculator {
 
     public static double calculateIncomeTax(double income, boolean isFemale) {
@@ -29,10 +31,17 @@ public class IncomeTaxCalculator {
     }
 
     public static void main(String[] args) {
-        double income = 600000;
-        boolean isFemale = false;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your income: ");
+        double income = scanner.nextDouble();
+
+        System.out.print("Are you female? (true/false): ");
+        boolean isFemale = scanner.nextBoolean();
 
         double taxAmount = calculateIncomeTax(income, isFemale);
         System.out.println("Income Tax: " + taxAmount);
+        
+        scanner.close();
     }
 }
