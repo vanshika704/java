@@ -10,5 +10,7 @@ public class strings {
      System.out.println(str2);
      str2.delete(3, 4);
      System.out.println(str2);
+     str2.reverse();
+     System.out.println(str2);
     }
 }
