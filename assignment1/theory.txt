@@ -1,0 +1,19 @@
+[1] Is it compulsory to use javac command to get the .class file after compilation? 
+no  , it is  not necessary to use javac command to get the .class , you can simply run the program by run method in different IDE.
+
+[2] Can we overload main method in Java? 
+ yes, we can overload the main method in java as follows:
+ public static void main (String[]args);
+ public static void main (String[]);
+ public static void main (int number);
+
+ [3] Define the terms JRE and JVM?
+ JRE refferes to JAVA Runtime Environment. this is the runtime environment which is created on the time on code execution.
+JVM reffers to Java virtual machiene which is used for code execution , which makes java fast too.
+
+[4] Why Java is known as pure Object-Oriented language?  
+java is a pure oop language because all the things are revolving around classes and objects in java , along with the acess modifiers and it also supports all the basics of oops.
+
+[5] How to receive an integer value using command line argument?
+ done in program .
+
