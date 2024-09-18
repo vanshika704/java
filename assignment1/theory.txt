@@ -17,3 +17,34 @@ java is a pure oop language because all the things are revolving around classes 
 [5] How to receive an integer value using command line argument?
  done in program .
 
+[6]  Does return type play any role while overloading a method? Justify.
+no , because it is majorly dependent upon name of the constructor and the parameters in it.
+
+[7]  continue vs. break keyword. Why we need to write these two statements in our code? 
+The continue keyword is used to skip the rest of the current iteration of a loop and proceed to the next iteration.
+whereas in the case of break , the code immediately exits the loop .
+
+[8]   Discuss the basic working of Conway’s Game of Life (CGOL). 
+ This is a game in which a grid is considered and some basic rules are followed .
+1: Birth : if three or more cells next to the dead cell are alive , the cell gets alive 
+2: Survival : Till two or more neighbours are alive , theey too remain alive
+3: Death : If less than two neighbours are alive , the cell dies
+
+[9]Discuss Data Types in detail? Draw diagram and table of each data type with example. 
+In Java, data types are categorized into two main types: primitive data types and reference data types. Here's a detailed explanation of each, including diagrams and tables to illustrate their characteristics.
+1. Primitive Data Types
+Primitive data types are the basic types built into the Java language. They represent simple values and are not objects. Java has eight primitive data types:
+
+Data Type   	Size	Default Value	Description
+byte	       8 bits	0	            Represents an 8-bit signed integer.
+short	       16 bits	0	            Represents a 16-bit signed integer.
+int	           32 bits	0	            Represents a 32-bit signed integer.
+long	       64 bits	0L	            Represents a 64-bit signed integer.
+float	       32 bits	0.0f	        Represents a 32-bit floating-point number.
+double	       64 bits	0.0d	        Represents a 64-bit floating-point number.
+char	       16 bits	'\u0000'      	Represents a single 16-bit Unicode character.
+boolean	        1 bit	false	        Represents a boolean value (true or false).
+
+[10]Write a program to find out whether the given number is Prime number or not. 
+
+done in code
