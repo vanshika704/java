@@ -8,7 +8,7 @@ public class createfile { // class bnao create file
                 System.out.println("File Created: " + file1.getAbsolutePath());
             }
             else{
-                System.out.println ("File already exists "); // agar alreadyb bni hui file toh yha se chakk lo exception
+                System.out.println ("File already exists "); // agar already bni hui file toh yha se chakk lo exception
             }
         }
         catch (IOException e){
