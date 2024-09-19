@@ -1,14 +1,14 @@
-import java.io.*;
-public class createfile {
-    public static void main (String [] args){
-        File file1 = new File ("abc.txt");
+import java.io.*; // import kro java ki io library 
+public class createfile { // class bnao create file 
+    public static void main (String [] args){ // main method call lgado
+        File file1 = new File ("abc.txt"); // file initiate krdo abc.txt name se 
 
-        try {
-            if (file1.createNewFile()){
+        try { // try catch block h 
+            if (file1.createNewFile()){ // file1.createNewfile() krke new method bnado , or print krwado ki kaam hogya h maalik
                 System.out.println("File Created: " + file1.getAbsolutePath());
             }
             else{
-                System.out.println ("File already exists ");
+                System.out.println ("File already exists "); // agar alreadyb bni hui file toh yha se chakk lo exception
             }
         }
         catch (IOException e){
