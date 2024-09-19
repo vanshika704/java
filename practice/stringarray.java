@@ -19,7 +19,7 @@ public class stringarray { // class  bnao stringarray naam se
     public static int sumOfDigits(int number) { // chota sa mehtod bnaya jisme  did=guits nikaalre h
         int sum = 0; // intjialize krdia sum
         while (number != 0) {
-            sum += number % 10;
+            sum += number % 10; // sum + number%10 hua h
             number /= 10;
         }
         return sum;
