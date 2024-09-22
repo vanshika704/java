@@ -18,7 +18,6 @@ public class stringmethods {
 
         // Concatenating the reversed strings using append
         String output = str1.append(str2).toString();
-
         // Output the result
         System.out.println("Concatenated Reversed Strings: " + output);
 
