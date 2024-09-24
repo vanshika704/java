@@ -21,7 +21,7 @@ public class stringmethods {
         // Output the result
         System.out.println("Concatenated Reversed Strings: " + output);
 
-        // Close the scanner to prevent resource leaks
+        // Close the scanner to prevent resource leaks`
         sc.close();
     }
 }
