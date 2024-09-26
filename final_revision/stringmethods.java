@@ -10,6 +10,6 @@ public class stringmethods {
       System.out.println( str1.substring(2, 4)); 
       System.out.println(str1.trim());   
        System.out.println( str1.charAt(4));
-       System.out.println( str1.concat(" munjal sir ki paint me"));
+       System.out.println( str1.concat(" kya haal bachha log "));
     }
 }
