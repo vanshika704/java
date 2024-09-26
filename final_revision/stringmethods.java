@@ -4,5 +4,8 @@ public class stringmethods {
 
         str1.length();
         str1.substring(2,4);
+        str1.trim();
+        str1.charAt(4);
+        str1.concat("munjal sir ki paint me"); // bro dont judge ... ye sirf college romance ka dialogue h
     }
 }
