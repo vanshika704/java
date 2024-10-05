@@ -1,4 +1,4 @@
-import java.io.*;  
+ 
 import java.net.*;  
 public class Inetadress{  
 public static void main(String[] args){  
