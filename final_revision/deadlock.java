@@ -1,38 +1,33 @@
-class Resource {
-    String name;
-
-    public Resource(String name) {
-        this.name = name;
-    }
-}
+class Resource1 {}
+class Resource2 {}
 
 public class DeadlockExample {
     public static void main(String[] args) {
-        Resource resourceA = new Resource("Resource-A");
-        Resource resourceB = new Resource("Resource-B");
+        Resource1 resource1 = new Resource1();
+        Resource2 resource2 = new Resource2();
 
-        // Thread-1: Locks resourceA and then tries to lock resourceB
+        // Thread 1 tries to lock resource1 then resource2
         Thread thread1 = new Thread(() -> {
-            synchronized (resourceA) {
-                System.out.println("Thread-1: Locked " + resourceA.name);
+            synchronized (resource1) {
+                System.out.println("Thread 1: Locked Resource 1");
 
-                try { Thread.sleep(100); } catch (InterruptedException e) {}
+                try { Thread.sleep(100); } catch (Exception e) {}
 
-                synchronized (resourceB) {
-                    System.out.println("Thread-1: Locked " + resourceB.name);
+                synchronized (resource2) {
+                    System.out.println("Thread 1: Locked Resource 2");
                 }
             }
         });
 
-        // Thread-2: Locks resourceB and then tries to lock resourceA
+        // Thread 2 tries to lock resource2 then resource1
         Thread thread2 = new Thread(() -> {
-            synchronized (resourceB) {
-                System.out.println("Thread-2: Locked " + resourceB.name);
+            synchronized (resource2) {
+                System.out.println("Thread 2: Locked Resource 2");
 
-                try { Thread.sleep(100); } catch (InterruptedException e) {}
+                try { Thread.sleep(100); } catch (Exception e) {}
 
-                synchronized (resourceA) {
-                    System.out.println("Thread-2: Locked " + resourceA.name);
+                synchronized (resource1) {
+                    System.out.println("Thread 2: Locked Resource 1");
                 }
             }
         });
