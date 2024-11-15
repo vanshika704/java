@@ -14,3 +14,12 @@ public class file1 {
         }
     }
 }
+
+// creating a file : File file = new File ("hello.txt");
+// file.createfile();
+
+//writing to a file : FileWriter fw = new FileWriter("hello.txt");
+// BufferedWriter bw = new BufferedWriter(fw);
+
+// reading from a file :FileReader fr = new FileReader("hello.txt");
+// BufferedReader br = new BufferedReader(fr);
