@@ -1,10 +1,10 @@
-import java.util.LinkedList;
+import java.util.LinkedList; // import krenge linked list
 
-class Buffer {
+class Buffer { // create buffer class , which will have linked list in it 
     private LinkedList<Integer> list = new LinkedList<>();
     private final int CAPACITY = 5;
 
-    // Method for the producer to add items to the buffer
+
     public synchronized void produce(int value) throws InterruptedException {
         while (list.size() == CAPACITY) {  // Wait if buffer is full
             wait();
